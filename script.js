@@ -50,11 +50,15 @@ searchButton.addEventListener('click', async () => {
   loader.classList.add('active')
   if (usernameInput.value == '') {
     alert('Input cannot be empty')
+    buttonText.classList.add('active')
+    loader.classList.remove('active')
     return
   }
   const userData = await getUserData(usernameInput.value)
   if (!userData) {
     alert('Username not found')
+    buttonText.classList.add('active')
+    loader.classList.remove('active')
     return
   }
   addDataToPage(userData)
