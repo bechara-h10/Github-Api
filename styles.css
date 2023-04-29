@@ -109,6 +109,7 @@ div.repos-info {
   border: solid 1px gray;
   padding: 20px;
   margin-top: 10px;
+  gap: 5px;
 }
 
 div.public-repos,
@@ -130,7 +131,7 @@ div.media-values {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  font-size: 0.8rem;
+  font-size: 0.8em;
 }
 
 span.button-text {
@@ -157,5 +158,22 @@ div.loader {
 @keyframes spin {
   100% {
     rotate: 360deg;
+  }
+}
+
+@media (width <=600px) {
+  body {
+    font-size: 0.6rem;
+  }
+  div.search-container {
+    width: 75%;
+  }
+
+  div.github-profile-container {
+    width: 75%;
+  }
+
+  div.repos-info {
+    padding: 5px;
   }
 }
