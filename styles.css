@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1a212d;
+  color: white;
+}
+
+div.page-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.search-container {
+  width: 500px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #161922;
+  border-radius: 2px;
+  border: solid 1px gray;
+  padding-right: 5px;
+  margin-bottom: 20px;
+}
+
+div.search-container input#username-input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+div.search-container input#username-input:focus {
+  outline: none;
+}
+
+div.search-container button.search-button {
+  background-color: #675afe;
+  color: #fff;
+  width: 70px;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+div.github-profile-container {
+  display: none;
+  width: 600px;
+  border: solid 1px gray;
+  background-color: #161922;
+  border-radius: 2px;
+  padding: 20px;
+  gap: 5%;
+}
+
+div.full-name h3 {
+  margin: 0;
+}
+
+div.github-username a {
+  color: #675afe;
+  text-decoration: none;
+  margin: 0;
+}
+
+div.github-profile-description p {
+  margin: 0;
+}
+
+div.github-profile-image {
+  width: 20%;
+}
+
+div.github-profile-image img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+div.github-profile-info {
+  width: 75%;
+}
+
+div.repos-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 2px;
+  background-color: #1a212d;
+  border: solid 1px gray;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+div.public-repos,
+div.followers,
+div.following {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+div.public-repos p,
+div.followers p,
+div.following p {
+  margin: 0;
+}
+
+div.media-values {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 0.8rem;
+}
+
+span.button-text {
+  display: none;
+}
+
+div.github-profile-container.active,
+span.button-text.active,
+div.loader.active {
+  display: flex;
+}
+
+div.loader {
+  display: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: solid 3px #675afe;
+  border-top: solid 3px #161922;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  100% {
+    rotate: 360deg;
+  }
+}

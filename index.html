@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Working with Github API</title>
+  </head>
+  <body>
+    <div class="page-title">
+      <h1>Work With Github Api</h1>
+    </div>
+    <div class="search-container">
+      <input
+        type="text"
+        placeholder="Enter Github Username"
+        id="username-input"
+      />
+      <button class="search-button">
+        <span class="button-text active">Search</span>
+        <div class="loader"></div>
+      </button>
+    </div>
+    <div class="github-profile-container">
+      <div class="github-profile-image">
+        <img src="" />
+      </div>
+      <div class="github-profile-info">
+        <div class="full-name"><h3></h3></div>
+        <div class="github-username">
+          <a href="https://github.com/bechara-h10" target="_blank"></a>
+        </div>
+        <div class="github-profile-description">
+          <p></p>
+        </div>
+        <div class="repos-info">
+          <div class="public-repos">
+            <p>Public repos</p>
+            <span></span>
+          </div>
+          <div class="followers">
+            <p>Followers</p>
+            <span></span>
+          </div>
+          <div class="following">
+            <p>Following</p>
+            <span></span>
+          </div>
+        </div>
+        <div class="media-values">
+          <span class="media-value"></span>
+          <span class="media-value"></span>
+          <span class="media-value"></span>
+          <span class="media-value"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- https://api.github.com/users/ -->
